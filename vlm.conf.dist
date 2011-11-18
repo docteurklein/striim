@@ -1,0 +1,16 @@
+###############
+new VFV vod
+#setup VFV output #transcode{vcodec=vorb,venc=theora,fps=10,vb=500,width=320,heigth=240}:std{access=http,mux=ogg,dst=0.0.0.0:8090/stream.ogg} # low quality
+setup VFV output #transcode{vcodec=vorb,venc=theora,vb=500}:std{access=http,mux=ogg,dst=0.0.0.0:8090/stream.ogg}
+
+setup VFV input /path/to/file
+#setup VFV enabled
+
+###############
+new screen vod
+setup screen output #transcode{vcodec=vorb,venc=theora,fps=10,vb=500,width=320,heigth=240}:std{access=http,mux=ogg,dst=0.0.0.0:8090/stream.ogg}
+
+setup screen input screen://
+#setup screen enabled
+
+###############

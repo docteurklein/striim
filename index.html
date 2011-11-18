@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="vendor/video-js/video-js.css" type="text/css" media="screen" />
+    </head>
+    <body>
+        <div class="video-js-box">
+            <video class="video-js" id="video-js" width="640" height="264" controls preload>
+                <source src="http://localhost:8090/stream.ogg" type="video/ogg; codecs='theora, vorbis'" />
+            </video>
+            <p class="vjs-no-video"><strong>Download Video:</strong>
+                <a href="http://localhost:8090/stream.ogg">Ogg</a><br>
+                <a href="http://videojs.com">HTML5 Video Player</a> by VideoJS
+            </p>
+        </div>
+        <script src="vendor/video-js/video.js" type="text/javascript"></script>
+        <script src="vod.js" type="text/javascript"></script>
+    </body>
+</html>
